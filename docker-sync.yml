@@ -1,0 +1,5 @@
+version: '2'
+
+syncs:
+  laravel-hiroshima-20191124-src-volume:
+    src: '.'

@@ -1,0 +1,13 @@
+version: '3.7'
+
+volumes:
+  laravel-hiroshima-20191124-src-volume:
+    external: true
+
+services:
+  php:
+    volumes:
+      - laravel-hiroshima-20191124-src-volume:/var/www/html
+  nginx:
+    volumes:
+      - laravel-hiroshima-20191124-src-volume:/var/www/html
