@@ -12,3 +12,8 @@
 */
 
 Route::get('/', '\App\Http\Controllers\WelcomeController@index');
+Route::get('/test', function () {
+    $test = 'aiu';
+
+    return view('pages.test', ['test' => $test]);
+});
