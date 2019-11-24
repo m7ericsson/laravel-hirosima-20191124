@@ -12,3 +12,6 @@
 */
 
 Route::get('/', '\App\Http\Controllers\WelcomeController@index');
+Route::get('/test2', function () {
+    return view('welcome');
+});
